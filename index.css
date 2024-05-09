@@ -32,10 +32,7 @@ body {
     font-size: 4vmax;
 }
 #menu {
-    height: 8vmax;    /* alçària d'un 8% respecte l'alçària de la pantalla */
-}
-#menu {
-    display: none;    /* el menú és un contenidor de tipus flex */
+    display: flex;    /* el menú és un contenidor de tipus flex */
     height: 8vmax;
 }
 #menu i{
