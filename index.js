@@ -4,6 +4,9 @@ function canvia_seccio(num_boto) {
     for (let i = 1; i < num_botons; i++) {
         let boto = document.getElementById("boto_" + i);
         let seccio = document.getElementById("seccio_" + i);
+        if (num_boto == 3) {    // si es prem el botó de la secció "Galeria"
+    omple_llista();
+        }  
         if (i == num_boto) {
             boto.style.color = "#950E17";    // es destaca la secció activa amb el canvi de colors del botó corresponent
             boto.style.backgroundColor = "#FCDEE0";
