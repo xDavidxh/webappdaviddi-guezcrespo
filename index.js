@@ -5,7 +5,7 @@ function canvia_seccio(num_boto) {
         let boto = document.getElementById("boto_" + i);
         let seccio = document.getElementById("seccio_" + i);
         if (num_boto == 3) {    // si es prem el botó de la secció "Galeria"
-    omple_llista();
+            omple_llista();
         }
         if (num_boto == 4) {
             mapa.invalidateSize();
