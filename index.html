@@ -1,6 +1,8 @@
 <!DOCTYPE html>    <!-- tipus de document (HTML) -->  
 <html lang="ca">
   <head>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js">    // s'utilitza la IA de TensorFlow </script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script> 
     <script src="index.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>  
@@ -67,7 +69,7 @@
     </div>
     <div id="seccio_5" class="seccio">
       <div>
-        <i id="icona_video" class="fa-solid fa-video"></i>    <!-- icona d'una càmera de vídeo -->
+        <i id="icona_video" class="fa-solid fa-video" onclick="inicia_video()"></i>
         <div id="webcam-container"></div>    <!-- contenidor de vídeo -->
       </div>
       <div id="reconeixement">    <!-- espai per visualitzar les dades -->
@@ -84,6 +86,7 @@
       <i id="boto_2" class="fa-solid fa-camera" onclick="canvia_seccio(2)"></i>
       <i id="boto_3" class="fa-solid fa-image" onclick="canvia_seccio(3)"></i>
       <i id="boto_4" class="fa-solid fa-map" onclick="canvia_seccio(4)"></i>
+      <i id="boto_5" class="fa-solid fa-brain" onclick="canvia_seccio(5)"></i>
       <i class="fa-solid fa-right-from-bracket" onclick="tanca_sessio()"></i>
     </div>
   </body>
