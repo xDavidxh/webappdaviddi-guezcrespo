@@ -6,7 +6,10 @@ function canvia_seccio(num_boto) {
         let seccio = document.getElementById("seccio_" + i);
         if (num_boto == 3) {    // si es prem el botó de la secció "Galeria"
     omple_llista();
-        }  
+        }
+        if (num_boto == 4) {
+    mapa.invalidateSize();
+        }
         if (i == num_boto) {
             boto.style.color = "#950E17";    // es destaca la secció activa amb el canvi de colors del botó corresponent
             boto.style.backgroundColor = "#FCDEE0";
