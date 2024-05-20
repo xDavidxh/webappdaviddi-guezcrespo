@@ -4,6 +4,12 @@ function canvia_seccio(num_boto) {
     if (num_boto == 3) {    // si es prem el botó de la secció "Galeria"
     omple_llista();
     }
+    if (num_boto == 4) {
+    mapa.invalidateSize();
+        if (typeof geoID === "undefined") {    // si encara no s'han obtingut les dades de localització del dispositiu
+        navigator.geolocation.watchPosition(geoExit);    // inicia el seguiment de la localització del dispositiu
+        }
+    }
     for (let i = 1; i < num_botons; i++) {
         let boto = document.getElementById("boto_" + i);
         let seccio = document.getElementById("seccio_" + i);
