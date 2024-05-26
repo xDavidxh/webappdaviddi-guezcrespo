@@ -212,6 +212,7 @@ function geoExit(posicio){
         geoID.setLatLng([latitud, longitud]);    // actualització de la posició del marcador d'usuari en el mapa
     }
 }
+let model, webcam, predicciones, maxPredicciones;
 async function inicia_video() {
     const codi_model = "https://teachablemachine.withgoogle.com/models/zYVOfqG15/"    // substitueix els asteriscs pel codi del model d'IA que vas crear en una activitat anterior
     const tmURL = "https://teachablemachine.withgoogle.com/models/" + codi_model;
