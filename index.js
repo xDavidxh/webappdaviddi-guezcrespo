@@ -24,8 +24,6 @@ function canvia_seccio(num_boto) {
         navigator.geolocation.watchPosition(geoExit);    // inicia el seguiment de la localització del dispositiu
         }
     }
-    if (num_boto == 5) {
-    }
 }
 let validat = false;    // variable que permet saber si hi ha algun usuari validat
 let nom, contrasenya;
